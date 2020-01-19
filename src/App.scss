@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8d8d8d;
+}
+
+#drum-machine {
+    min-height: 300px;
+    min-width: 600px;
+    padding: 20px;
+    background: #b3b3b3;
+    border: 6px solid orange;
+
+    #logo {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 2rem;
+        color: #000;
+    }
+
+    .control {
+        display: flex;
+        min-height: 100%;
+
+
+        .pad-bank {
+            min-width: 50%;
+            min-height: 300px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+            grid-gap: 20px;
+            font-size: 2rem;
+
+            .drum-pad {
+                background: grey;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-style: bold;
+                box-shadow: black 3px 3px 3px;
+                border-radius: 3px;
+            }
+        }
+
+        #display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 50%;
+
+            h1 {
+                
+            }
+
+        }
+    }
+}
